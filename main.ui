@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Main</class>
+ <widget class="QMainWindow" name="Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>545</width>
+    <height>852</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QDoubleSpinBox" name="rate">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>540</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="suffix">
+     <string> calls / sec</string>
+    </property>
+    <property name="decimals">
+     <number>2</number>
+    </property>
+    <property name="minimum">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>1000.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>3.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDial" name="rateDial">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>520</y>
+      <width>50</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+    <property name="invertedControls">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>509</width>
+      <height>509</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="grid">
+     <item row="3" column="0">
+      <widget class="Led" name="led_15">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="Led" name="led_14">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="Led" name="led_10">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="4">
+      <widget class="Led" name="led_23">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="Led" name="led_3">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="Led" name="led_19">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="Led" name="led_18">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="4">
+      <widget class="Led" name="led_22">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="Led" name="led_4">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="Led" name="led_20">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="Led" name="led_7">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="Led" name="led_17">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="Led" name="led_1">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="Led" name="led_21">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="Led" name="led_16">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="Led" name="led_12">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="Led" name="led_11">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="5">
+      <widget class="Led" name="led_24">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="Led" name="led_2">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="Led" name="led_13">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="Led" name="led_0">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="6">
+      <widget class="Led" name="led_25">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="Led" name="led_6">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="Led" name="led_5">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="Led" name="led_8">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="Led" name="led_9">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="7">
+      <widget class="Led" name="led_26">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="5">
+      <widget class="Led" name="led_27">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="6">
+      <widget class="Led" name="led_28">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="7">
+      <widget class="Led" name="led_29">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="7">
+      <widget class="Led" name="led_30">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="6">
+      <widget class="Led" name="led_31">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="5">
+      <widget class="Led" name="led_32">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="5">
+      <widget class="Led" name="led_33">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="6">
+      <widget class="Led" name="led_34">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="7">
+      <widget class="Led" name="led_35">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="5">
+      <widget class="Led" name="led_36">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="6">
+      <widget class="Led" name="led_37">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="7">
+      <widget class="Led" name="led_38">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="7">
+      <widget class="Led" name="led_39">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="6">
+      <widget class="Led" name="led_40">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="Led" name="led_41">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="Led" name="led_42">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6">
+      <widget class="Led" name="led_43">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="7">
+      <widget class="Led" name="led_44">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="7">
+      <widget class="Led" name="led_45">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="Led" name="led_46">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="Led" name="led_47">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="Led" name="led_48">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="Led" name="led_49">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="Led" name="led_50">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="Led" name="led_51">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="Led" name="led_52">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="Led" name="led_53">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="Led" name="led_54">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="Led" name="led_55">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="Led" name="led_56">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="Led" name="led_57">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="Led" name="led_58">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="Led" name="led_59">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="Led" name="led_60">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="Led" name="led_61">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="Led" name="led_62">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="Led" name="led_63">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPlainTextEdit" name="code">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>530</y>
+      <width>331</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>This is the function that runs every step that describes what number to next
+display. The syntax is standard python 3.9, with the math and numpy libraries
+imported, in addition to the function bit, which takes a number and a bit
+index and returns what the value is at that index. The default function adds one to the previous number, then resets it once it's gotten too big. Key
+parameters are:
+
+prev: The previous number
+count: The total number of squares
+rows: The number of rows in the grid
+columns: The number of columns in the grid
+rate: The number of calls / second specified
+persist: A bonus variable that maintains it's value over successive iterations.
+If you need multiple persistent variables, make it into a list or a tuple.
+
+prev, rows, columns, and count are read-only. You can change them if you
+want, but they won't do anything. To set the next number, return the number
+you want to be set.</string>
+    </property>
+    <property name="documentTitle">
+     <string/>
+    </property>
+    <property name="lineWrapMode">
+     <enum>QPlainTextEdit::NoWrap</enum>
+    </property>
+    <property name="plainText">
+     <string>new = prev + 1
+
+if new &gt;= 2 ** count:
+    new = 0
+
+return new</string>
+    </property>
+    <property name="tabStopWidth">
+     <number>15</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="resetVal">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>580</y>
+      <width>52</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>999</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resetButton">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>580</y>
+      <width>88</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset to</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addButton">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>620</y>
+      <width>88</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="addVal">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>620</y>
+      <width>52</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-999</number>
+    </property>
+    <property name="maximum">
+     <number>999</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resetFunc">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>740</y>
+      <width>141</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset Function</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="persistButton">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>660</y>
+      <width>91</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Set Persist to</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="persistVal">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>660</y>
+      <width>51</width>
+      <height>32</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="ouput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>700</y>
+      <width>341</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="error">
+     <attribute name="title">
+      <string>Errors</string>
+     </attribute>
+     <widget class="QTextBrowser" name="errorMsg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>331</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Errors</string>
+      </property>
+      <property name="openLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="out_2">
+     <attribute name="title">
+      <string>Output</string>
+     </attribute>
+     <widget class="QTextBrowser" name="out">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>331</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Output (doesn't work)</string>
+      </property>
+      <property name="openLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>545</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="save"/>
+    <addaction name="saveAs"/>
+    <addaction name="load"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="save">
+   <property name="text">
+    <string>Save Program</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="saveAs">
+   <property name="text">
+    <string>Save Program As...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="load">
+   <property name="text">
+    <string>Load Program</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Led</class>
+   <extends>QLabel</extends>
+   <header location="global">led</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
